@@ -1,0 +1,18 @@
+[package]
+name = "hybridfutex"
+version = "0.1.0"
+description="An efficient hybrid wait queue futex designed for high-contention scenarios, supporting both synchronous and asynchronous waiting and notification. It supports notify and notify_many on all targets."
+edition = "2018"
+authors = ["Khashayar Fereidani"]
+repository = "https://github.com/fereidani/hybridfutex"
+documentation = "https://docs.rs/hybridfutex"
+keywords = ["futex", "async", "signals" ,"queue"]
+categories = ["data-structures", "concurrency", "system-programming", "asynchronous"]
+license = "MIT"
+readme = "README.md"
+
+[dependencies]
+crossbeam-queue = "0.3"
+
+[dev-dependencies]
+futures = "0.3"
